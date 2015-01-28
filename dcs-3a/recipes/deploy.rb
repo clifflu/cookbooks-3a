@@ -1,5 +1,5 @@
 include_recipe 'deploy'
 
 node[:deploy].each do |application, deploy|
-  Chef::Log.warning("App: #{application}, Deploy: #{deploy}")
+  Chef::Log.info("App: #{application}, Deploy: #{deploy}")
 end
